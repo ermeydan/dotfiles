@@ -1,9 +1,0 @@
-export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin"
-
-bindkey -e
-
-SPACESHIP_VI_MODE_SHOW=false
-
-source ~/.zsh_plugins.sh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

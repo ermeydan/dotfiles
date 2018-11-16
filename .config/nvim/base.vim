@@ -1,12 +1,10 @@
-syntax enable
-filetype plugin indent on
-
 set number
 set relativenumber
-set autoread
-set autowrite
-set hidden
 set nowrap
+set hidden
+set autoread
+set noruler
+set autowrite
 set expandtab
 set shiftwidth=2
 set ignorecase
@@ -16,6 +14,9 @@ set splitright
 set splitbelow
 set noswapfile
 set undofile
+set laststatus=0
+set noshowcmd
+set completeopt-=preview
 
 set undodir=~/.cache/nvim/temp/undodir
 set clipboard=unnamedplus
@@ -28,7 +29,11 @@ set termguicolors
 set background=dark
 
 if !exists('g:not_finish_vimplug')
-  colorscheme solarized8
+  let g:gruvbox_italic = 1
+  let g:gruvbox_invert_selection = 0
+  let g:gruvbox_contrast_dark = 'hard'
+  let g:gruvbox_sign_column = 'bg0'
+  colorscheme one
 endif
 
 let g:python_host_prog  = '/usr/bin/python'
