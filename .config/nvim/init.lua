@@ -142,12 +142,20 @@ require('lazy').setup({
     },
   },
 
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+  -- {
+  --   -- Theme inspired by Atom
+  --   'navarasu/onedark.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'onedark'
+  --   end,
+  -- },
+
+  { "catppuccin/nvim",
+    name = "catppuccin-macchiato",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'catppuccin-macchiato'
     end,
   },
 
@@ -421,6 +429,8 @@ vim.keymap.set('v', 'd', '"_d', { noremap = true})
 vim.keymap.set('v', 'p', '"_dP', { noremap = true})
 
 -- Splitting
+vim.o.splitbelow = true
+vim.o.splitright = true
 vim.keymap.set('n', '<leader>h', '<cmd>split<cr>', { desc = '[s] Horizontal split' })
 vim.keymap.set('n', '<leader>v', '<cmd>vsplit<cr>', { desc = '[v] Vertical split' })
 vim.keymap.set('n', '<leader>q', '<cmd>close<cr>', { desc = '[q] Close pane' })
