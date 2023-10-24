@@ -249,6 +249,9 @@ require('lazy').setup({
           null_ls.builtins.formatting.jq,
           null_ls.builtins.formatting.eslint_d,
           null_ls.builtins.formatting.prettierd,
+          null_ls.builtins.formatting.htmlbeautifier,
+          null_ls.builtins.formatting.rubocop,
+          null_ls.builtins.formatting.rubyfmt,
         },
       }
     end,
@@ -747,4 +750,3 @@ vim.api.nvim_create_autocmd({ "VimResized" }, {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
-
